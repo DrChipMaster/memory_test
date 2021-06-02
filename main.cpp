@@ -19,9 +19,9 @@ void write_pointcloud(pcl::PointCloud<pcl::PointXYZI>::Ptr cloud)
 {
 
     unsigned int bram_size = 0x20000;
-    off_t bram_x = 0x80000000; // physical base address
-    off_t bram_y = 0x82000000; // physical base address
-    off_t bram_z = 0x84000000; // physical base address
+    off_t bram_x = 0xA0000000; // physical base address
+    off_t bram_y = 0xA0020000; // physical base address
+    off_t bram_z = 0xA0040000; // physical base address
 
     u64 *bram_x_ptr;
     u64 *bram_y_ptr;
